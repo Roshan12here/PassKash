@@ -15,17 +15,18 @@ export default function Component() {
           <div className="grid gap-2">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <nav className="grid gap-2">
-              <Link href="#" className="text-sm hover:underline" prefetch={false}>
-                Home
+
+              <Link href="https://read.passkash.vip/whitepaper" passHref>
+                <div
+                >
+                  About
+                </div>
               </Link>
-              <Link href="#" className="text-sm hover:underline" prefetch={false}>
-                About
-              </Link>
-              <Link href="#" className="text-sm hover:underline" prefetch={false}>
-                Services
-              </Link>
-              <Link href="#" className="text-sm hover:underline" prefetch={false}>
-                Contact
+              <Link href="https://www.passcash.org/" passHref>
+                <div
+                >
+                  Services
+                </div>
               </Link>
             </nav>
           </div>
@@ -48,15 +49,6 @@ export default function Component() {
                     <FaReddit className="h-6 w-6 cursor-pointer text-[#FF4500]" />
                   </motion.div>
                 </Link>
-                <Link href="https://www.linkedin.com/company/passkash" passHref>
-                  <motion.div
-                    whileHover={{ scale: 1.2, rotate: 15 }}
-                    whileTap={{ scale: 0.9, rotate: -15 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <FaLinkedin className="h-6 w-6 cursor-pointer text-[#0A66C2]" />
-                  </motion.div>
-                </Link>
                 <Link href="https://t.me/pkttoken" passHref>
                   <motion.div
                     whileHover={{ scale: 1.2, rotate: 15 }}
@@ -75,9 +67,11 @@ export default function Component() {
                 <CardTitle className="items-center">Join Our Popular ICO <br /> <span className="text-center">Community</span></CardTitle>
               </CardHeader>
               <CardContent className="space-y-2 items-center">
-                <Button as="a" href="https://discord.com/invite/eFyMRNSx" className="px-16 py-4 bg-[#C20E4D]  text-xl">
+                <Button className="px-16 py-4 bg-[#C20E4D] text-xl">
+                  <a href="https://discord.com/invite/eFyMRNSx" className="flex items-center">
                     <RiDiscordFill className="text-[#ffffff] mr-2 h-6 w-6" />
                     Join
+                  </a>
                 </Button>
               </CardContent>
             </Card>
